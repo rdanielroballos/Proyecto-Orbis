@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>UTUPanel</title>
+
+<link rel="stylesheet" href="../../../css/generales.css">
+<link rel="stylesheet" href="../../../css/metricas.css">
+
+</head>
+
+<body>
+
+<main class="main" id="scroll">
+
+    <!-- TABS -->
+
+    <div class="tabs-wrapper">
+
+        <a class="tab active" href="../../general(tickets)/tickets/tickets.html">
+            General
+        </a>
+
+        <a class="tab" href="../../prestamos/index.html">
+            Préstamos
+        </a>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="tab-content active">
+
+        <div class="tab-layout app" id="generalApp">
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-toggle" data-toggle="generalApp">
+                    ‹‹
+                </div>
+
+                <div>
+
+                    <div class="brand">
+                        <h1>UTU<span>Panel</span></h1>
+                    </div>
+
+                    <nav class="menu">
+
+                        <a href="../tickets/tickets.html">
+                            <span class="icon">●</span>
+                            <span>Tickets</span>
+                        </a>
+
+                        <a href="../salones_y_laboratorios/index.html">
+                            <span class="icon">●</span>
+                            <span>Salones y Laboratorios</span>
+                        </a>
+
+                        <a href="../agenda/index.html">
+                            <span class="icon">●</span>
+                            <span>Agenda</span>
+                        </a>
+
+                        <a href="../metricas/index.html" class="active">
+                            <span class="icon" >●</span>
+                            <span>Métricas</span>
+                        </a>
+
+                    </nav>
+
+                </div>
+
+                <div class="sidebar-footer">
+
+                    <a href="../mantenimiento/index.html">
+                        <span class="icon">⚙</span>
+                        <span>Mantenimiento</span>
+                    </a>
+
+                    <a href="../../login.html">
+                        <span class="icon">⏼</span>
+                        <span>Cerrar sesión</span>
+                    </a>
+
+                </div>
+
+            </aside>
+
+            <!-- PANEL DE CONTENIDO -->
+
+            <div class="content-panel">
+
+                <section class="header">
+
+                    <h2>Métricas</h2>
+
+                    <p>
+                        Indicadores y estadísticas institucionales.
+                    </p>
+
+                </section>
+
+                <section class="stats-grid">
+
+                    <div class="stat-card">
+                        <h4>Incidentes</h4>
+                        <span>138</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>Requerimientos</h4>
+                        <span>74</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>Tiempo Promedio</h4>
+                        <span>1.8 días</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>Resueltos en Plazo</h4>
+                        <span>92%</span>
+                    </div>
+
+                </section>
+
+                <section class="charts-row">
+
+                    <div class="chart-card">
+
+                        <h3>Incidentes vs Requerimientos</h3>
+
+                        <div class="pie-chart"></div>
+
+                    </div>
+
+                    <div class="chart-card">
+
+                        <h3>Evolución Mensual</h3>
+
+                        <div class="bars-chart">
+
+                            <div class="bar" style="height:45%"></div>
+                            <div class="bar" style="height:55%"></div>
+                            <div class="bar" style="height:70%"></div>
+                            <div class="bar" style="height:60%"></div>
+                            <div class="bar" style="height:90%"></div>
+                            <div class="bar" style="height:75%"></div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="charts-row">
+
+                    <div class="chart-card">
+
+                        <h3>Incidentes por Categoría</h3>
+
+                        <div class="horizontal-bars">
+
+                            <div class="h-bar">
+                                <span>Hardware</span>
+                                <div class="fill" style="width:85%"></div>
+                            </div>
+
+                            <div class="h-bar">
+                                <span>Software</span>
+                                <div class="fill" style="width:65%"></div>
+                            </div>
+
+                            <div class="h-bar">
+                                <span>Red</span>
+                                <div class="fill" style="width:55%"></div>
+                            </div>
+
+                            <div class="h-bar">
+                                <span>Impresoras</span>
+                                <div class="fill" style="width:35%"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chart-card">
+
+                        <h3>Uso de Laboratorios</h3>
+
+                        <div class="horizontal-bars">
+
+                            <div class="h-bar">
+                                <span>Lab 1</span>
+                                <div class="fill" style="width:70%"></div>
+                            </div>
+
+                            <div class="h-bar">
+                                <span>Lab 2</span>
+                                <div class="fill" style="width:40%"></div>
+                            </div>
+
+                            <div class="h-bar">
+                                <span>Lab 3</span>
+                                <div class="fill" style="width:95%"></div>
+                            </div>
+
+                            <div class="h-bar">
+                                <span>Lab 4</span>
+                                <div class="fill" style="width:50%"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="table-card">
+
+                    <h3>Top Laboratorios con Más Incidencias</h3>
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Laboratorio</th>
+                                <th>Incidencias</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Laboratorio 3</td>
+                                <td>31</td>
+                            </tr>
+
+                            <tr>
+                                <td>Laboratorio 1</td>
+                                <td>24</td>
+                            </tr>
+
+                            <tr>
+                                <td>Laboratorio 5</td>
+                                <td>18</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="../../../javascript/general.js"></script>
+
+</body>
+</html>

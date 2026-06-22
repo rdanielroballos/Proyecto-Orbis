@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>UTUPanel</title>
+
+<link rel="stylesheet" href="../../../css/generales.css">
+<link rel="stylesheet" href="../../../css/registro_de_uso_de_aula.css">
+
+</head>
+
+<body>
+
+<main class="main" id="scroll">
+
+    <!-- TABS -->
+
+    <div class="tabs-wrapper">
+
+        <a class="tab active" href="../tickets/tickets.html">
+            General
+        </a>
+
+        <a class="tab" href="../../prestamos/index.html">
+            Préstamos
+        </a>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="tab-content active">
+
+        <div class="tab-layout app" id="generalApp">
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-toggle" data-toggle="generalApp">
+                    ‹‹
+                </div>
+
+                <div>
+
+                    <div class="brand">
+                        <h1>UTU<span>Panel</span></h1>
+                    </div>
+
+                    <nav class="menu">
+
+                        <a href="../tickets/tickets.html">
+                            <span class="icon">●</span>
+                            <span>Tickets</span>
+                        </a>
+
+                        <a href="../salones_y_laboratorios/index.html" class="active">
+                            <span class="icon">●</span>
+                            <span>Salones y Laboratorios</span>
+                        </a>
+
+                        <a href="../general(tickets)/agenda/index.html">
+                            <span class="icon">●</span>
+                            <span>Agenda</span>
+                        </a>
+
+                        <a href="../general(tickets)/metricas/index.html">
+                            <span class="icon">●</span>
+                            <span>Métricas</span>
+                        </a>
+
+                    </nav>
+
+                </div>
+
+                <div class="sidebar-footer">
+
+                    <a href="../mantenimiento/index.html">
+                        <span class="icon">⚙</span>
+                        <span>Mantenimiento</span>
+                    </a>
+
+                    <a href="../../login.html">
+                        <span class="icon">⏼</span>
+                        <span>Cerrar sesión</span>
+                    </a>
+
+                </div>
+
+            </aside>
+
+            <!-- PANEL DE CONTENIDO -->
+
+            <div class="content-panel">
+
+                <section class="header">
+
+                    <h2>Registro de Uso</h2>
+
+                    <p>
+                        Registro de utilización de salonoes y laboratorios.
+                    </p>
+
+                </section>
+
+                <section class="form-card">
+
+                    <form class="registro-form">
+
+                        <div class="form-group">
+                            <label for="laboratorio">Laboratorio</label>
+                            <select id="laboratorio" name="laboratorio">
+                                <option value="">Seleccionar</option>
+                                <option>Laboratorio 1</option>
+                                <option>Laboratorio 2</option>
+                                <option>Laboratorio 3</option>
+                                <option>Laboratorio 4</option>
+                                <option>Laboratorio 5</option>
+                                <option>Laboratorio 6</option>
+                                <option>Laboratorio 7</option>
+                                <option>Laboratorio 8</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="taller">Taller</label>
+                            <select id="taller" name="taller">
+                                <option value="">Seleccionar</option>
+                                <option>Taller 1</option>
+                                <option>Taller 2</option>
+                                <option>Taller 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grupo">Grupo</label>
+                            <input type="text" id="grupo" name="grupo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="entrada">Hora de entrada</label>
+                            <input type="time" id="entrada" name="entrada">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salida">Hora de salida</label>
+                            <input type="time" id="salida" name="salida">
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="asignatura">Asignatura</label>
+                            <select id="asignatura" name="asignatura">
+                                <option value="">Seleccionar</option>
+                                <option>Sistemas Operativos</option>
+                                <option>Programacion Full Stack</option>
+                                <option>Física</option>
+                                <option>Matemáticas</option>
+                                <option>Emprendedurismo y gestión de Empresas</option>
+                                <option>Cálculo</option>
+                                <option>Filosofía</option>
+                                <option>Ciberseguridad</option>
+
+                            </select>
+                        </div>
+
+                        <!--
+                        <div class="form-group">
+                            <label for="asignatura">Asignatura</label>
+                            <input type="text" id="asignatura" name="asignatura">
+                        </div>
+                        -->
+
+                        <div class="form-group">
+                            <label for="docente">Docente</label>
+                            <input type="text" id="docente" name="docente">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="turno">Turno</label>
+                            <select id="turno" name="turno">
+                                <option value="">Seleccionar</option>
+                                <option>Matutino</option>
+                                <option>Vespertino</option>
+                                <option>Nocturno</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions">
+
+                            <button type="submit" class="btn-primary">
+                                Registrar Uso
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="../../../javascript/general.js"></script>
+
+</body>
+</html>

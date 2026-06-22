@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>UTUPanel</title>
+
+<link rel="stylesheet" href="../../css/generales.css">
+
+</head>
+
+<body>
+
+<!-- MAIN -->
+
+<main class="main" id="scroll">
+
+    <!-- TABS -->
+
+    <div class="tabs-wrapper">
+
+        <!--
+        <button class="tab " data-tab="general">
+            General
+        </button>
+
+        <button class="tab active" data-tab="prestamos">
+            Préstamos
+        </button>
+        -->
+
+        <a class="tab" href="../general(tickets)/tickets/tickets.html">General</a>
+
+        <a class="tab active" href="../prestamos/index.html">Préstamos</a>
+
+    </div>
+
+    <!-- =========================
+         PRESTAMOS
+    ========================== -->
+
+    <div id="prestamos" class="tab-content active">
+
+        <div class="tab-layout app" id="prestamosApp">
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-toggle" data-toggle="prestamosApp">
+                    ‹‹
+                </div>
+
+                <div>
+
+                    <div class="brand">
+                        <h1>UTU<span>Panel</span></h1>
+                    </div>
+
+                    <nav class="menu">
+
+                        <a href="#" class="active">
+                            <span class="icon">●</span>
+                            <span>Préstamos activos</span>
+                        </a>
+
+                        <a href="#">
+                            <span class="icon">●</span>
+                            <span>Devoluciones</span>
+                        </a>
+
+                        <a href="#">
+                            <span class="icon">●</span>
+                            <span>Historial</span>
+                        </a>
+
+                    </nav>
+
+                </div>
+
+                <div class="sidebar-footer">
+
+                    <a href="#">
+                        <span class="icon">⚙</span>
+                        <span>Mantenimiento</span>
+                    </a>
+
+                </div>
+
+            </aside>
+
+            <!-- CONTENT -->
+
+            <div class="content-panel">
+
+                <section class="header">
+
+                    <h2>Préstamos</h2>
+
+                    <p>
+                        Gestión y control de préstamos institucionales.
+                    </p>
+
+                </section>
+
+                <section class="grid">
+
+                    <div class="card">
+
+                        <div class="badge">P</div>
+
+                        <h3>Préstamos activos</h3>
+
+                        <p>
+                            Equipos y materiales actualmente prestados.
+                        </p>
+
+                        <div class="metric">32</div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="badge">D</div>
+
+                        <h3>Devoluciones</h3>
+
+                        <p>
+                            Control y seguimiento de devoluciones pendientes.
+                        </p>
+
+                        <div class="metric">7</div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="../../javascript/general.js"></script>
+
+</body>
+</html>

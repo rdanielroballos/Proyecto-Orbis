@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>UTUPanel</title>
+
+<link rel="stylesheet" href="../../../css/generales.css">
+<link rel="stylesheet" href="../../../css/mis_tickets.css">
+
+</head>
+
+<body>
+
+<main class="main" id="scroll">
+
+    <!-- TABS -->
+
+    <div class="tabs-wrapper">
+
+        <a class="tab active" href="../tickets/tickets.html">
+            General
+        </a>
+
+        <a class="tab" href="../../prestamos/index.html">
+            Préstamos
+        </a>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="tab-content active">
+
+        <div class="tab-layout app" id="generalApp">
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-toggle" data-toggle="generalApp">
+                    ‹‹
+                </div>
+
+                <div>
+
+                    <div class="brand">
+                        <h1>UTU<span>Panel</span></h1>
+                    </div>
+
+                    <nav class="menu">
+
+                        <a href="../tickets/tickets.html">
+                            <span class="icon">●</span>
+                            <span>Tickets</span>
+                        </a>
+
+                        <a href="../salones_y_laboratorios/index.html" class="active">
+                            <span class="icon">●</span>
+                            <span>Salones y Laboratorios</span>
+                        </a>
+
+                        <a href="../agenda/index.html">
+                            <span class="icon">●</span>
+                            <span>Agenda</span>
+                        </a>
+
+                        <a href="../metricas/index.html">
+                            <span class="icon">●</span>
+                            <span>Métricas</span>
+                        </a>
+
+                    </nav>
+
+                </div>
+
+                <div class="sidebar-footer">
+
+                    <a href="../mantenimiento/index.html">
+                        <span class="icon">⚙</span>
+                        <span>Mantenimiento</span>
+                    </a>
+
+                    <a href="../../login.html">
+                        <span class="icon">⏼</span>
+                        <span>Cerrar sesión</span>
+                    </a>
+
+                </div>
+
+            </aside>
+
+            <!-- PANEL DE CONTENIDO -->
+            <div class="content-panel">
+
+                <!-- HEADER -->
+                <section class="header">
+
+                    <h2>Registros</h2>
+
+                    <p>
+                        Buscador de regitros existentes.
+                    </p>
+
+                </section>
+
+                <!-- FILTROS -->
+                <div class="form-card">
+                    <section class="ticket-filters-card">
+
+                        <form class="ticket-filters">
+                            
+                            <div class="form-group">
+                                <label for="ubicacion">Ubicación</label>
+
+                                <select id="ubicacion" name="ubicacion">
+
+                                    <option value="">Seleccionar</option>
+                                    
+                                    <option selected>Todos</option>
+                                    <option>Salón 1</option>
+                                    <option>Salón 2</option>
+                                    <option>Salón 3</option>
+                                    <option>Salón 4</option>
+                                    <option>Salón 5</option>
+                                    <option>Salón 6</option>
+                                    <option>Salón 7</option>
+                                    <option>Salón 8</option>
+
+                                    <option>Laboratorio 1</option>
+                                    <option>Laboratorio 2</option>
+                                    <option>Laboratorio 3</option>
+                                    <option>Laboratorio 4</option>
+                                    <option>Laboratorio 5</option>
+                                    <option>Laboratorio 6</option>
+                                    <option>Laboratorio 7</option>
+                                    <option>Laboratorio 8</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="filtro_docente">Docente</label>
+                                <select id="filtro_docente">
+                                    <option value="" selected>Todos</option>
+                                    <option value="a_mi">Docente 1</option>
+                                    <option value="asistente">Docente 2</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="filtro_fecha">Fecha</label>
+                                <input type="date" id="filtro_fecha">
+                            </div>
+
+
+                        </form>
+
+                    </section>
+
+                    <!-- LISTADO -->
+                    <section class="">
+
+                        <div class="ticket-list">
+
+                            <!-- ITEM -->
+                            <div class="ticket-item">
+
+                                <div class="ticket-main">
+                                    <h3>Salón 3</h3>
+                                    <p>Docente 2 · 12/06/2026</p>
+                                </div>
+
+                                <div class="ticket-badges">
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- ITEM -->
+                            <div class="ticket-item">
+
+                                <div class="ticket-main">
+                                    <h3>Laboratorio 1</h3>
+                                    <p>Docente 1 · 10/06/2026</p>
+                                </div>
+
+                                <div class="ticket-badges">
+
+                                    
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="../../../javascript/general.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>UTUPanel</title>
+
+<link rel="stylesheet" href="../../../css/generales.css">
+<link rel="stylesheet" href="../../../css/registro_de_ticket.css">
+
+</head>
+
+<body>
+
+<main class="main" id="scroll">
+
+    <!-- TABS -->
+
+    <div class="tabs-wrapper">
+
+        <a class="tab active" href="../../general(tickets)/tickets/tickets.html">
+            General
+        </a>
+
+        <a class="tab" href="../../prestamos/index.html">
+            Préstamos
+        </a>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="tab-content active">
+
+        <div class="tab-layout app" id="generalApp">
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-toggle" data-toggle="generalApp">
+                    ‹‹
+                </div>
+
+                <div>
+
+                    <div class="brand">
+                        <h1>UTU<span>Panel</span></h1>
+                    </div>
+
+                    <nav class="menu">
+
+                        <a href="../tickets/tickets.html" class="active">
+                            <span class="icon">●</span>
+                            <span>Tickets</span>
+                        </a>
+
+                        <a href="../salones_y_laboratorios/index.html">
+                            <span class="icon">●</span>
+                            <span>Salones y Laboratorios</span>
+                        </a>
+
+                        <a href="../agenda/index.html">
+                            <span class="icon">●</span>
+                            <span>Agenda</span>
+                        </a>
+
+                        <a href="../metricas/index.html">
+                            <span class="icon">●</span>
+                            <span>Métricas</span>
+                        </a>
+
+                    </nav>
+
+                </div>
+
+                <div class="sidebar-footer">
+
+                    <a href="../mantenimiento/index.html">
+                        <span class="icon">⚙</span>
+                        <span>Mantenimiento</span>
+                    </a>
+
+                    <a href="../../login.html">
+                        <span class="icon">⏼</span>
+                        <span>Cerrar sesión</span>
+                    </a>
+
+                </div>
+
+            </aside>
+
+            <!-- PANEL DE CONTENIDO -->
+            <div class="content-panel">
+
+                <section class="header">
+
+                    <h2>Nuevo Ticket</h2>
+
+                    <p>
+                        Registro de incidencias y requerimientos institucionales.
+                    </p>
+
+                </section>
+
+                <section class="form-card">
+
+                        <form class="registro-form">
+
+                            <div class="form-group">
+                                <label for="tipo_ticket">Tipo de Ticket</label>
+
+                                <select id="tipo_ticket" name="tipo_ticket">
+                                    <option value="">Seleccionar</option>
+                                    <option value="incidencia">Incidencia</option>
+                                    <option value="requerimiento">Requerimiento</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ubicacion">Ubicación</label>
+
+                                <select id="ubicacion" name="ubicacion">
+
+                                    <option value="">Seleccionar</option>
+
+                                    <option>Salón 1</option>
+                                    <option>Salón 2</option>
+                                    <option>Salón 3</option>
+                                    <option>Salón 4</option>
+                                    <option>Salón 5</option>
+                                    <option>Salón 6</option>
+                                    <option>Salón 7</option>
+                                    <option>Salón 8</option>
+
+                                    <option>Laboratorio 1</option>
+                                    <option>Laboratorio 2</option>
+                                    <option>Laboratorio 3</option>
+                                    <option>Laboratorio 4</option>
+                                    <option>Laboratorio 5</option>
+                                    <option>Laboratorio 6</option>
+                                    <option>Laboratorio 7</option>
+                                    <option>Laboratorio 8</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="prioridad">Prioridad</label>
+
+                                <select id="prioridad" name="prioridad">
+                                    <option value="">Seleccionar</option>
+                                    <option>Baja</option>
+                                    <option>Media</option>
+                                    <option>Alta</option>
+                                    <option>Crítica</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fecha">Fecha</label>
+
+                                <input
+                                    type="date"
+                                    id="fecha"
+                                    name="fecha"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="titulo">Título</label>
+
+                                <input
+                                    type="text"
+                                    id="titulo"
+                                    name="titulo"
+                                    placeholder="Resumen breve del ticket"
+                                >
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="detalle">Detalle</label>
+
+                                <textarea
+                                    id="detalle"
+                                    name="detalle"
+                                    rows="8"
+                                    placeholder="Describa detalladamente la incidencia o requerimiento..."
+                                ></textarea>
+                            </div>
+
+                            <div class="form-actions">
+
+                                <button type="submit" class="btn-primary">
+                                    Crear Ticket
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="../../../javascript/general.js"></script>
+
+</body>
+</html>
